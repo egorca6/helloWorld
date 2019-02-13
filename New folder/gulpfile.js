@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     less = require('gulp-less'),
     sourcemaps = require('gulp-sourcemaps'),
-    rigger = require('gulp-rigger'),
+    include = require('gulp-file-include'),
     cssmin = require('gulp-clean-css'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
@@ -46,7 +46,7 @@ var config = {
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html) 
-        .pipe(rigger())
+        .pipe(include())
         .pipe(gulp.dest(path.distr.html)) 
         .pipe(reload({stream: true})); 
 });
