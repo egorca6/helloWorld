@@ -1,5 +1,52 @@
-html {
-    outline: 1px solid green
+@font-face{
+    font-family: fun;
+    src: url('../fonts/retro.ttf');
 }
-body *   {
-    outline: 1px solid red}
+
+
+
+
+.font-exampl {
+    font-family: fun,'Trebuchet MS', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: solid;
+    text-transform: capitalize;
+    color: blue;
+    background-color: black;
+}
+
+.position-fixed{
+    position: fixed;
+    height: 70px;
+    background-color: green;
+    top: 0;
+    left: 0;
+    width: 100%;
+ 
+}
+.position-absolute{
+    position: absolute;
+   bottom: 0;
+   right: 0;
+   height: 100px;
+   width: 100px;
+   border: 1px solid blue;
+ 
+}
+.position-relative{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.inner-relative {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    outline: 1px solid green;
+    
+}
