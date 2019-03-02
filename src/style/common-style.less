@@ -1,5 +1,52 @@
-html {
-    outline: 1px solid green
+body{
+	padding-top: 100px;
 }
-body *   {
-    outline: 1px solid red}
+
+.block{
+	border: 1px solid green;
+}
+
+.parent{
+	position: relative;
+	width: 400px;
+	height: 300px;
+	margin: 0 auto;
+}
+.additional{
+	width: 400px;
+	height: 150px;
+	margin: 15px auto;
+}
+
+.child{
+	width: 50%;
+	height: 50%;
+}
+.center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%)
+}
+/* тоже самое
+.class3 .parent{
+	background-color: blue
+}
+
+.class1 .class2 .class3{
+	background-color: blue
+}
+
+.patent .class3{
+	background-color: blue
+}
+
+*/
+.parent + .class3{
+	background-color: blue;
+}
+.class2{
+	border-bottom-right-radius: 50% 38px;
+	border-bottom-left-radius: 50% 38px;
+	background-color: gold;
+}
