@@ -1,5 +1,42 @@
-html {
-    outline: 1px solid green
+
+div{
+	background-color: lightgrey;
 }
-body *   {
-    outline: 1px solid red}
+label{
+	display: block;
+}
+
+form{
+	margin: 50px;
+	outline: 1 px solid gold;
+}
+/*
+[type="radio"]:checked,
+[type="checkbox"]:checked ` label{
+	color:red;} */
+	
+	
+.accordion{
+	width: 500px;
+	margin: 0 auto;
+	
+	&__capture,
+	&__description {
+		border: 1px solid red;
+	}
+}
+#close:checked ~ .accordion__description{
+	height: 0px;
+	overflow: hidden;
+	transition: .10s;
+}
+#close:checked ~ .accordion__capture [for="close"]{
+	display: none;
+}
+#open:checked ~ .accordion__capture  [for="open"]{
+	display: none;
+}/*
+.accordion__capture{
+	background-color: lightseagreen;
+	transition: all .5s linear;
+}*/
