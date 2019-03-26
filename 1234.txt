@@ -1,0 +1,68 @@
+бинарные и http://jsbin.com/?js,console
+ var c = 3
+c>d;  3+3
+\\\\
+var c= + '3' пытается преобразовать строку в число
+var i=0
+i++; i увеличится на еденицу
+var e =++i;
+var o=i++
+тип данных лист (последовательно достается)
+тип данных массив array (быстро можно достать массив) объявляется через []
+например array=[1,2,3,4,5]
+for (var=0; i<arr.lenght; i++){
+nbody
+break;\\ позволяет насильно остановить цикл или свечу
+if(i==2){
+break;
+if (i==4){
+continue
+}
+}
+var arr = ['a','b','c','d','e'];
+for (var i = 0; i < arr.length; i++) {
+  if(i == 2) {
+    continue;
+  }
+  if (i ===4) {
+    break;
+  }
+  console.log(arr[i]);
+}  итерация набор команд цикла
+if\ else
+While(условие) {}
+do while
+switch
+var c =  3;
+switch(c){
+  case 1: {
+    console.log('value 1')
+    break;
+    }
+    case 2: {
+    console.log('value 2')
+    break;
+    }
+    case 3: {
+    console.log('value 3')
+    break;
+    }
+  default: {
+    console.log('default')
+  }
+}
+асоциативный массив - объект- нету понятия длины, но можно обратиться к его значениям
+var obj = {
+age: 18,
+male: 'man'
+greeting: function(){
+console.log('HW')}
+}
+obj.age=18
+obj['age']
+obj.city="Gomel"
+delete obj.city - удалит поле из объекта
+json
+{"name" : "Vasia"
+"language":["Java", "js","c",3]
+}
