@@ -66,3 +66,6 @@ json
 {"name" : "Vasia"
 "language":["Java", "js","c",3]
 }
+
+домашка
+console.log((3+2+1)/3);
