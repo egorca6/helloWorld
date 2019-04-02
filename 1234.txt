@@ -1,4 +1,4 @@
-бинарные и http://jsbin.com/?js,console||  https://www.codewars.com
+бинарные и http://jsbin.com/?js,console
  var c = 3
 c>d;  3+3
 \\\\
@@ -67,78 +67,5 @@ json
 "language":["Java", "js","c",3]
 }
 
-function aver () {
-  var arr = Array.from(arguments);
-  var result = 0;
-  for(var i = 0; i < arr.length; i++) {
-    result += arr[i];
-  }
-    return result / arr.length
-  }
-  var d = aver (1, 2, 3)
-  console.log(d);
-\\\ массив из звездочек
-function square(ln){
-  var result = [];
-  for(var i=0; i<ln; i++){
-    result[i]=[];
-    for(var j=0; j<ln; j++){
-      result[i][j] = "*"
-  }
-}
-  return result;
-}
-console.log(square(3));
-\\\
-
-
-
-function driweLine(len){
-  var line = [];
-  for(i =0; i<len; i++){
-    line[i] = '*'
-  }
-  return line;
-}
-
-function square(ln){
-  var result = [];
-  for(var i=0; i<ln; i++){
-      result[i]=driweLine(ln)
-  }
-
-  return result;
-}
-console.log(square(3));
-\\\\массив из звездочек
-
-function driweLine(len, isFill){
-  var line = [];
-  for(i =0; i<len; i++){
-    if(!isFill) {
-      if (i ===0 || i ===len-1){
-
-    line[i] = '*';
-  } else {
-    line[i]= ' ';
-  }
-  } else {
-    line[i] = '*';
-  }
-  }
-  return line;
-}
-
-function square(ln){
-  var result = [];
-  for(var i=0; i<ln; i++){
-    if (i===0 || i === ln - 1){
-      result[i]=driweLine(ln, true)
-  } else{
-    result[i]= driweLine(ln, false);
-  }
-  }
-  return result;
-}
-console.log(square(4));
-///
+домашка
+console.log((3+2+1)/3);
